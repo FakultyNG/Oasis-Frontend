@@ -1,0 +1,6 @@
+"use client";
+import { LockKeyhole, Sparkles } from "lucide-react";
+import Link from "next/link";
+import type { ReactNode } from "react";
+import { useDemoStore } from "@/stores/demo-store";
+export function SkinGate({ children }: { children: ReactNode }) { const tier = useDemoStore((state) => state.activeTier); if (tier !== "regular") return children; return <div className="flex min-h-[calc(100dvh-9rem)] flex-col justify-center text-center"><span className="mx-auto grid size-16 place-items-center rounded-full bg-oasis-gold-soft"><LockKeyhole className="size-6" /></span><p className="mt-7 text-xs font-semibold uppercase tracking-[0.18em] text-[#8a7135]">Oasis Membership Feature</p><h1 className="mt-2 text-[2.3rem] font-medium tracking-[-0.05em]">Unlock Your Oasis Skin Journey.</h1><p className="mx-auto mt-4 max-w-xs text-sm leading-6 text-muted-foreground">AI Skin Journey is available to Gold and Black members. You’re ₦180,000 away from Gold.</p><Link href="/membership" className="mt-7 flex h-12 items-center justify-center gap-2 rounded-full bg-foreground text-sm font-medium text-white"><Sparkles className="size-4" />View Membership</Link><Link href="/membership/activate?tier=gold" className="mt-4 text-xs font-medium underline underline-offset-4">Fund & Qualify Now</Link></div>; }

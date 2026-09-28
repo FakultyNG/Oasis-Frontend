@@ -1,0 +1,9 @@
+import type { Service } from "@/domain/types";
+
+export const SERVICES: Service[] = [
+  { id: "hydrafacial", name: "HydraFacial", category: "Skin health", durationMinutes: 60, price: 100_000, description: "A deeply hydrating facial that cleanses, exfoliates and replenishes the skin in one calm ritual.", benefits: ["Deep hydration", "Smoother texture", "Immediate radiance"], cashPointsReward: 5_000, visual: "water" },
+  { id: "iv-therapy", name: "IV Therapy", category: "Wellness", durationMinutes: 45, price: 75_000, description: "A restorative wellness infusion designed to support hydration, energy and everyday resilience.", benefits: ["Hydration support", "Energy boost", "Tailored nutrients"], cashPointsReward: 3_750, visual: "wellness" },
+  { id: "brightening-treatment", name: "Brightening Treatment", category: "Complexion", durationMinutes: 75, price: 120_000, description: "A targeted complexion treatment for dullness and uneven tone, finished with soothing hydration.", benefits: ["More even tone", "Visible brightness", "Refined texture"], cashPointsReward: 6_000, visual: "bright" },
+  { id: "laser-treatment", name: "Laser Treatment", category: "Advanced skin", durationMinutes: 60, price: 150_000, description: "A considered laser session tailored to your skin goals after a professional consultation.", benefits: ["Targeted correction", "Collagen support", "Personalized settings"], cashPointsReward: 7_500, visual: "laser" },
+  { id: "premium-skin-package", name: "Premium Skin Package", category: "Oasis signature", durationMinutes: 120, price: 250_000, description: "Our complete signature experience, combining advanced care with an extended restorative ritual.", benefits: ["Multi-step treatment", "Bespoke skin plan", "Extended aftercare"], cashPointsReward: 12_500, visual: "premium" },
+];

@@ -1,4 +1,29 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Oasis MedSpa Membership Prototype
+
+Mobile-first PWA prototype for the Oasis MedSpa membership experience.
+
+## Run locally
+
+```bash
+pnpm dev
+```
+
+Open [http://localhost:3000](http://localhost:3000).
+
+## Architecture
+
+- `src/app` — App Router screens and PWA manifest
+- `src/components` — reusable product and shell components
+- `src/domain` — types, constants, and business rules
+- `src/data/mock` — prototype fixture data
+- `src/repositories` — API-swappable data access contracts
+- `src/stores` — persisted demo controls
+
+Milestones are implemented and approved sequentially per the product requirements.
+
+## Current milestone
+
+Milestone 10 is implemented: all five PRD journeys have passed prototype QA, including booking and rescheduling, Gold activation, wallet-paid treatment completion with CashPoints, Black privileges, and the complete Skin Journey loop.
 
 ## Getting Started
 
